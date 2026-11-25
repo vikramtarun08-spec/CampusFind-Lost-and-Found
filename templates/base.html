@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}CampusFind{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+<header class="header"><a class="logo" href="/"><span class="logo-mark">C</span> CampusFind</a>
+<nav><a href="/">Home</a><a href="/items">Browse Items</a><a href="/report?kind=Lost">Report Lost</a><a href="/report?kind=Found">Report Found</a></nav>
+<a class="nav-cta" href="/report?kind=Lost">+ Report Item</a></header>
+<main class="wrap">
+{% with messages = get_flashed_messages() %}{% if messages %}<div class="flash">{% for m in messages %}<p>{{ m }}</p>{% endfor %}</div>{% endif %}{% endwith %}
+{% block content %}{% endblock %}
+</main>
+<footer><strong>CampusFind</strong><span>Helping campus belongings find their way home.</span><a href="/admin">Admin demo</a></footer>
+<script src="{{ url_for('static', filename='app.js') }}"></script></body></html>
