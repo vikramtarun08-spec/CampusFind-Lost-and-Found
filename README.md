@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CampusFind — Campus Lost & Found Portal
 
 A responsive full-stack college project for reporting lost belongings and found items.
@@ -41,3 +42,7 @@ Open `/admin` to see all reports and submitted claims. This prototype does not i
 
 ## Privacy / project note
 Use demo contact details during presentations. The app stores user-submitted contact information locally in `campusfind.db`. A production version should add authentication, privacy controls, moderation, and secure deployment.
+=======
+# CampusFind-Lost-and-Found
+A college Lost &amp; Found web portal built using HTML, CSS, JavaScript, Python Flask, and SQLite.
+>>>>>>> 9a4996094967ab58f6a7df1d227822cf73276f47
